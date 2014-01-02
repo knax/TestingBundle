@@ -1,0 +1,16 @@
+knax_index:
+    pattern:  /
+    defaults: { _controller: KnaxTestingBundle:Default:index }
+
+login:
+    pattern:   /login
+    defaults:  { _controller: KnaxTestingBundle:Security:login }
+login_check:
+    pattern:   /login/check
+    defaults:  { _controller: KnaxTestingBundle:Security:postLogin }
+logout:
+    path:     /logout
+    defaults:  { _controller: KnaxTestingBundle:Security:postLogout }
+secure_area:
+    pattern:   /secure_area
+    defaults:  { _controller: KnaxTestingBundle:Security:dummy }
